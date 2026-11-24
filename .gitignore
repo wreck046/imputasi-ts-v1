@@ -4,7 +4,6 @@ __pycache__/
 .pytest_cache/
 data/raw/*.csv
 data/processed/*
-results/*
 !results/.gitkeep
 !data/processed/.gitkeep
 

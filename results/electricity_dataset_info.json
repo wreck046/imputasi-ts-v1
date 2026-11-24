@@ -1,0 +1,68 @@
+{
+  "n_rows": 17420,
+  "n_eligible": 313,
+  "columns": [
+    "MT_001",
+    "MT_061",
+    "MT_135",
+    "MT_201",
+    "MT_256",
+    "MT_312",
+    "MT_369"
+  ],
+  "select": "even",
+  "n_allzero_rows_fixed": 0,
+  "first": "2013-01-05 05:00:00",
+  "last": "2015-01-01 00:00:00",
+  "split_shift": [
+    {
+      "kolom": "MT_001",
+      "val_mean": -0.327,
+      "val_std": 0.832,
+      "test_mean": 0.017,
+      "test_std": 1.049
+    },
+    {
+      "kolom": "MT_061",
+      "val_mean": -0.592,
+      "val_std": 0.71,
+      "test_mean": -0.233,
+      "test_std": 0.836
+    },
+    {
+      "kolom": "MT_135",
+      "val_mean": 0.285,
+      "val_std": 1.231,
+      "test_mean": 0.043,
+      "test_std": 1.107
+    },
+    {
+      "kolom": "MT_201",
+      "val_mean": 0.321,
+      "val_std": 1.009,
+      "test_mean": 0.076,
+      "test_std": 0.871
+    },
+    {
+      "kolom": "MT_256",
+      "val_mean": 0.027,
+      "val_std": 0.845,
+      "test_mean": -0.026,
+      "test_std": 0.904
+    },
+    {
+      "kolom": "MT_312",
+      "val_mean": 0.157,
+      "val_std": 0.917,
+      "test_mean": -0.003,
+      "test_std": 0.932
+    },
+    {
+      "kolom": "MT_369",
+      "val_mean": 0.486,
+      "val_std": 1.151,
+      "test_mean": 0.128,
+      "test_std": 0.997
+    }
+  ]
+}
