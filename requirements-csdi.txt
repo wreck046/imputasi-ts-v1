@@ -1,0 +1,7 @@
+# Dipasang SETELAH requirements.txt, saat reproduksi CSDI.
+-r requirements.txt
+# 1) PyTorch build CUDA: JANGAN dari file ini. Pilih perintah di https://pytorch.org/get-started/locally/
+#    (Stable, Pip, Python, CUDA sesuai `nvidia-smi`), jalankan di venv yang sama, lalu cek:
+#    python -c "import torch; print(torch.__version__, torch.cuda.is_available())"
+# 2) Dibutuhkan repo CSDI (diimpor di diff_models.py, walau is_linear: False):
+linear_attention_transformer

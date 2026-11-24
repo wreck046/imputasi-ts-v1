@@ -1,0 +1,59 @@
+# DIHASILKAN oleh scripts/prepare_dataset.py (protokol diperkecil). Periksa kalman.harmonics/maxiter dengan tune_kalman.py.
+data:
+  path: data/processed/electricity.csv
+  split:
+    - 0.7
+    - 0.1
+    - 0.2
+  date_col: date
+  target_cols:
+    - MT_001
+    - MT_061
+    - MT_135
+    - MT_201
+    - MT_256
+    - MT_312
+    - MT_369
+  name: electricity
+seeds:
+  - 0
+  - 1
+block_missing_ratio: 0.2
+conditions:
+  - name: random20
+    kind: random
+    ratio: 0.2
+  - name: block24
+    kind: block
+    length: 24
+    simultaneous: false
+  - name: block72
+    kind: block
+    length: 72
+    simultaneous: false
+  - name: block24_sim
+    kind: block
+    length: 24
+    simultaneous: true
+  - name: block72_sim
+    kind: block
+    length: 72
+methods:
+  - linear
+  - seasonal_interp
+  - kalman
+  - ridge_mv
+period: 24
+interval_level: 0.95
+stl:
+  iterations: 5
+  robust: true
+kalman:
+  harmonics: 12
+  maxiter: 200
+ridge_mv:
+  alpha: 1.0
+  min_rows: 100
+  n_aug: 2
+  lags:
+    - 24

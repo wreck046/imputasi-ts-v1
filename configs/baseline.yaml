@@ -1,0 +1,50 @@
+data:
+  path: data/raw/ETTh1.csv
+  split: [0.7, 0.1, 0.2] # kronologis, tanpa shuffle
+  date_col: date
+  target_cols: null # null = semua kolom selain date (7 variabel ETTh1)
+
+seeds: [0, 1, 2, 3, 4]
+
+# Proporsi titik hilang pada kondisi blok (total, bukan per blok)
+block_missing_ratio: 0.2
+
+conditions:
+  - { name: random10, kind: random, ratio: 0.10 }
+  - { name: random20, kind: random, ratio: 0.20 } # proporsi sama dengan blok (perbandingan setara)
+  - { name: random30, kind: random, ratio: 0.30 }
+  - { name: random50, kind: random, ratio: 0.50 }
+  - { name: block24, kind: block, length: 24, simultaneous: false }
+  - { name: block72, kind: block, length: 72, simultaneous: false }
+  # Blok serentak lintas variabel (lebih sulit; tidak ada variabel lain sebagai petunjuk)
+  - { name: block24_sim, kind: block, length: 24, simultaneous: true }
+  - { name: block72_sim, kind: block, length: 72, simultaneous: true }
+
+methods:
+  [
+    linear,
+    ffill,
+    seasonal_interp,
+    stl,
+    kalman,
+    ridge_uv,
+    ridge_mv,
+    ridge_mv_lag,
+  ]
+
+period: 24 # musiman harian (data per jam)
+interval_level: 0.95
+stl:
+  iterations: 5
+  robust: true
+kalman:
+  # Pilih harmonics/maxiter dengan `python scripts/tune_kalman.py` (hanya data VALIDASI),
+  # lalu salin hasilnya ke sini. Jangan memilih berdasarkan hasil test.
+  harmonics: 12
+  maxiter: 200 # run sebelumnya (50) tidak konvergen
+
+ridge_mv: # baseline MULTIVARIAT non-diffusion (lihat src/imputasi/mv_baselines.py)
+  alpha: 1.0
+  min_rows: 100
+  n_aug: 2 # draw masking per kondisi pada train untuk membentuk data latih
+  lags: [24] # hanya untuk ridge_mv_lag: variabel lain pada t -/+ 24 jam

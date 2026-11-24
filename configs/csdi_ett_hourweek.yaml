@@ -1,0 +1,42 @@
+# Konfigurasi CSDI untuk ETTh1. Blok train/diffusion/model = config/base.yaml (imputasi) milik repo CSDI,
+# commit 7f24a436f08d98853a6b43d4f7f04e5a65ecdf27. JANGAN diubah (hyperparameter dikunci dari paper)
+# kecuali `epochs`, yang dipilih setelah mengukur waktu 1 epoch (scripts/csdi_benchmark.py).
+base_config: configs/baseline.yaml     # sumber data, split, kondisi missing, seed mask, interval_level
+csdi_path: third_party/CSDI
+
+train:
+  epochs: 200            # nilai paper; sesuaikan setelah benchmark dan CATAT di paper
+  batch_size: 16
+  lr: 1.0e-3
+  itr_per_epoch: 1.0e+8
+
+diffusion:
+  layers: 4
+  channels: 64
+  nheads: 8
+  diffusion_embedding_dim: 128
+  beta_start: 0.0001
+  beta_end: 0.5
+  num_steps: 50
+  schedule: "quad"
+  is_linear: False
+
+model:
+  is_unconditional: 0
+  timeemb: 128
+  featureemb: 16
+  target_strategy: "random"    # "random" = default paper. "mix_block" = ablasi (lihat catatan di README)
+
+# --- Bagian di bawah BUKAN dari paper: keputusan desain adaptor (catat di paper) ---
+adapter:
+  window_len: 168              # harus > blok terpanjang (72 jam)
+  windows_per_epoch: 1024      # jendela acak (stride 1) per epoch dari split train
+  val_windows_stride: 24
+  val_missing_ratio: 0.3       # mask validasi tetap, acak
+  timepoints: hour_of_week         # "relative" (default CSDI) atau "hour_of_week" (ablasi: beri fase harian)
+  block_lengths: [24, 72]      # hanya dipakai bila target_strategy = mix_block
+
+eval:
+  nsample: 50
+  stride: 24
+  batch_size: 16

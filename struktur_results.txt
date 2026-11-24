@@ -1,0 +1,153 @@
+﻿results\baselines_val\
+results\cepat\
+results\csdi\
+results\csdi_det_l1_mixblock\
+results\csdi_det_mixblock\
+results\csdi_electricity\
+results\csdi_eval\
+results\csdi_eval_det_l1_mixblock\
+results\csdi_eval_det_mixblock\
+results\csdi_eval_electricity\
+results\csdi_eval_hourweek\
+results\csdi_eval_mixblock\
+results\csdi_hourweek\
+results\csdi_mixblock\
+results\csdi_val_mixblock\
+results\kalman_final\
+results\tune_h12\
+results\v2\
+results\v2_mv\
+results\.gitkeep  (0 KB)
+results\baselines_per_variable_electricity.csv  (7.4 KB)
+results\baselines_per_variable_electricity_val.csv  (7.4 KB)
+results\baselines_raw_electricity.csv  (10.8 KB)
+results\baselines_raw_electricity_val.csv  (10.7 KB)
+results\baselines_summary_electricity.csv  (4.2 KB)
+results\baselines_summary_electricity_val.csv  (4.2 KB)
+results\electricity_dataset_info.json  (1.3 KB)
+results\kalman_tuning_val.csv  (1 KB)
+results\baselines_val\baselines_per_variable_etth1_val.csv  (2 KB)
+results\baselines_val\baselines_raw_etth1_val.csv  (2.9 KB)
+results\baselines_val\baselines_summary_etth1_val.csv  (1.2 KB)
+results\cepat\baselines_per_variable_etth1.csv  (10.7 KB)
+results\cepat\baselines_raw_etth1.csv  (40.1 KB)
+results\cepat\baselines_summary_etth1.csv  (6.3 KB)
+results\csdi\model_seed0\
+results\csdi\model_seed0\config_used.json  (0.8 KB)
+results\csdi\model_seed0\meta.json  (0.8 KB)
+results\csdi\model_seed0\model.pth  (1663.5 KB)
+results\csdi_det_l1_mixblock\model_seed0\
+results\csdi_det_l1_mixblock\model_seed1\
+results\csdi_det_l1_mixblock\model_seed2\
+results\csdi_det_l1_mixblock\model_seed0\config_used.json  (0.9 KB)
+results\csdi_det_l1_mixblock\model_seed0\meta.json  (0.8 KB)
+results\csdi_det_l1_mixblock\model_seed0\model.pth  (1663.5 KB)
+results\csdi_det_l1_mixblock\model_seed1\config_used.json  (0.9 KB)
+results\csdi_det_l1_mixblock\model_seed1\meta.json  (0.8 KB)
+results\csdi_det_l1_mixblock\model_seed1\model.pth  (1663.5 KB)
+results\csdi_det_l1_mixblock\model_seed2\config_used.json  (0.9 KB)
+results\csdi_det_l1_mixblock\model_seed2\meta.json  (0.8 KB)
+results\csdi_det_l1_mixblock\model_seed2\model.pth  (1663.5 KB)
+results\csdi_det_mixblock\model_seed0\
+results\csdi_det_mixblock\model_seed0\config_used.json  (0.9 KB)
+results\csdi_det_mixblock\model_seed0\meta.json  (0.8 KB)
+results\csdi_det_mixblock\model_seed0\model.pth  (1663.5 KB)
+results\csdi_electricity\model_seed0\
+results\csdi_electricity\model_seed1\
+results\csdi_electricity\model_seed2\
+results\csdi_electricity\model_seed0\config_used.json  (0.9 KB)
+results\csdi_electricity\model_seed0\meta.json  (0.8 KB)
+results\csdi_electricity\model_seed0\model.pth  (1663.5 KB)
+results\csdi_electricity\model_seed1\config_used.json  (0.9 KB)
+results\csdi_electricity\model_seed1\meta.json  (0.8 KB)
+results\csdi_electricity\model_seed1\model.pth  (1663.5 KB)
+results\csdi_electricity\model_seed2\config_used.json  (0.9 KB)
+results\csdi_electricity\model_seed2\meta.json  (0.8 KB)
+results\csdi_electricity\model_seed2\model.pth  (1663.5 KB)
+results\csdi_eval\csdi_raw_etth1_model0.csv  (15.7 KB)
+results\csdi_eval_det_l1_mixblock\csdi_raw_etth1_model0.csv  (9.2 KB)
+results\csdi_eval_det_l1_mixblock\csdi_raw_etth1_model1.csv  (9.1 KB)
+results\csdi_eval_det_l1_mixblock\csdi_raw_etth1_model2.csv  (9.1 KB)
+results\csdi_eval_det_mixblock\csdi_raw_etth1_model0.csv  (9.2 KB)
+results\csdi_eval_electricity\csdi_raw_electricity_model0.csv  (3.4 KB)
+results\csdi_eval_electricity\csdi_raw_electricity_model1.csv  (3.4 KB)
+results\csdi_eval_electricity\csdi_raw_electricity_model2.csv  (3.4 KB)
+results\csdi_eval_electricity\csdi_raw_electricity_val_model0.csv  (1.1 KB)
+results\csdi_eval_hourweek\csdi_raw_etth1_model0.csv  (4.8 KB)
+results\csdi_eval_mixblock\csdi_raw_etth1_model0.csv  (10 KB)
+results\csdi_eval_mixblock\csdi_raw_etth1_model1.csv  (4.8 KB)
+results\csdi_eval_mixblock\csdi_raw_etth1_model2.csv  (4.8 KB)
+results\csdi_eval_mixblock\csdi_raw_etth1_model3.csv  (2.5 KB)
+results\csdi_eval_mixblock\csdi_raw_etth1_model4.csv  (2.6 KB)
+results\csdi_eval_mixblock\csdi_raw_etth1_model5.csv  (1 KB)
+results\csdi_eval_mixblock\csdi_raw_etth1_model6.csv  (1 KB)
+results\csdi_eval_mixblock\csdi_raw_etth1_model7.csv  (2.6 KB)
+results\csdi_eval_mixblock\csdi_raw_etth1_model8.csv  (1 KB)
+results\csdi_eval_mixblock\csdi_raw_etth1_model9.csv  (1 KB)
+results\csdi_hourweek\model_seed0\
+results\csdi_hourweek\model_seed0\config_used.json  (0.8 KB)
+results\csdi_hourweek\model_seed0\meta.json  (0.8 KB)
+results\csdi_hourweek\model_seed0\model.pth  (1663.5 KB)
+results\csdi_mixblock\model_seed0\
+results\csdi_mixblock\model_seed1\
+results\csdi_mixblock\model_seed2\
+results\csdi_mixblock\model_seed3\
+results\csdi_mixblock\model_seed4\
+results\csdi_mixblock\model_seed5\
+results\csdi_mixblock\model_seed6\
+results\csdi_mixblock\model_seed7\
+results\csdi_mixblock\model_seed8\
+results\csdi_mixblock\model_seed9\
+results\csdi_mixblock\model_seed0\config_used.json  (0.8 KB)
+results\csdi_mixblock\model_seed0\meta.json  (0.8 KB)
+results\csdi_mixblock\model_seed0\model.pth  (1663.5 KB)
+results\csdi_mixblock\model_seed1\config_used.json  (0.8 KB)
+results\csdi_mixblock\model_seed1\meta.json  (0.8 KB)
+results\csdi_mixblock\model_seed1\model.pth  (1663.5 KB)
+results\csdi_mixblock\model_seed2\config_used.json  (0.8 KB)
+results\csdi_mixblock\model_seed2\meta.json  (0.8 KB)
+results\csdi_mixblock\model_seed2\model.pth  (1663.5 KB)
+results\csdi_mixblock\model_seed3\config_used.json  (0.8 KB)
+results\csdi_mixblock\model_seed3\meta.json  (0.8 KB)
+results\csdi_mixblock\model_seed3\model.pth  (1663.5 KB)
+results\csdi_mixblock\model_seed4\config_used.json  (0.8 KB)
+results\csdi_mixblock\model_seed4\meta.json  (0.8 KB)
+results\csdi_mixblock\model_seed4\model.pth  (1663.5 KB)
+results\csdi_mixblock\model_seed5\config_used.json  (0.8 KB)
+results\csdi_mixblock\model_seed5\meta.json  (0.8 KB)
+results\csdi_mixblock\model_seed5\model.pth  (1663.5 KB)
+results\csdi_mixblock\model_seed6\config_used.json  (0.8 KB)
+results\csdi_mixblock\model_seed6\meta.json  (0.8 KB)
+results\csdi_mixblock\model_seed6\model.pth  (1663.5 KB)
+results\csdi_mixblock\model_seed7\config_used.json  (0.8 KB)
+results\csdi_mixblock\model_seed7\meta.json  (0.8 KB)
+results\csdi_mixblock\model_seed7\model.pth  (1663.5 KB)
+results\csdi_mixblock\model_seed8\config_used.json  (0.8 KB)
+results\csdi_mixblock\model_seed8\meta.json  (0.8 KB)
+results\csdi_mixblock\model_seed8\model.pth  (1663.5 KB)
+results\csdi_mixblock\model_seed9\config_used.json  (0.8 KB)
+results\csdi_mixblock\model_seed9\meta.json  (0.8 KB)
+results\csdi_mixblock\model_seed9\model.pth  (1663.5 KB)
+results\csdi_val_mixblock\csdi_raw_etth1_val_model0.csv  (1.8 KB)
+results\csdi_val_mixblock\csdi_raw_etth1_val_model1.csv  (1.8 KB)
+results\csdi_val_mixblock\csdi_raw_etth1_val_model2.csv  (1.8 KB)
+results\csdi_val_mixblock\csdi_raw_etth1_val_model3.csv  (1.8 KB)
+results\csdi_val_mixblock\csdi_raw_etth1_val_model4.csv  (1.8 KB)
+results\csdi_val_mixblock\csdi_raw_etth1_val_model5.csv  (1.8 KB)
+results\csdi_val_mixblock\csdi_raw_etth1_val_model6.csv  (1.8 KB)
+results\csdi_val_mixblock\csdi_raw_etth1_val_model7.csv  (1.8 KB)
+results\csdi_val_mixblock\csdi_raw_etth1_val_model8.csv  (1.8 KB)
+results\csdi_val_mixblock\csdi_raw_etth1_val_model9.csv  (1.8 KB)
+results\kalman_final\baselines_per_variable_electricity.csv  (1.8 KB)
+results\kalman_final\baselines_per_variable_electricity_val.csv  (1.8 KB)
+results\kalman_final\baselines_raw_electricity.csv  (2.8 KB)
+results\kalman_final\baselines_raw_electricity_val.csv  (2.8 KB)
+results\kalman_final\baselines_summary_electricity.csv  (1.2 KB)
+results\kalman_final\baselines_summary_electricity_val.csv  (1.2 KB)
+results\tune_h12\kalman_tuning_val.csv  (0.5 KB)
+results\v2\baselines_per_variable_etth1.csv  (28.1 KB)
+results\v2\baselines_raw_etth1.csv  (104.6 KB)
+results\v2\baselines_summary_etth1.csv  (16.4 KB)
+results\v2_mv\baselines_per_variable_etth1.csv  (10.8 KB)
+results\v2_mv\baselines_raw_etth1.csv  (39.1 KB)
+results\v2_mv\baselines_summary_etth1.csv  (6.3 KB)
